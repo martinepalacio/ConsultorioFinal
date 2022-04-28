@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #181719;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 5vh 5.27vw 20px;
+  align-items: center;
+}
+.menuList {
+  display: flex;
+  flex-direction: row;
+}
+.menuList_li {
+  list-style: none;
+  padding: 1vh;
+  margin-left: 6.5vw;
+}
+.menuList_link {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.125em;
+  line-height: 22px;
+  color: #ffffff;
+  transition: 0.3s;
+}
+.menuList_link:hover {
+  border-bottom: 0.2vw solid white;
+  color: gray;
+}
+.logo {
+  text-decoration: none;
+  color: #ffffff;
+  border: 2px solid white;
+  font-family: "Crimson Pro";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 0.875em;
+  line-height: 1em;
+  padding: 0.5em;
+  /* identical to box height */
+
+  text-transform: uppercase;
+}
+.portada_img {
+  position: relative;
+  height: 38.54vw;
+  width: 51.18vw;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin: 9.5vw 5.34vw;
+}
+.titulos {
+  margin-right: 9.7vw;
+}
+.titulos h1 {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3em;
+  color: #ffffff;
+  margin-bottom: 20px;
+  width: max-content;
+}
+.titulos p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.leerMas {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.125em;
+  /* identical to box height */
+  transition: 0.5s;
+  color: #ffffff;
+}
+
+.leerMas:hover {
+  color: gray;
+}
+
+.perfil {
+  position: absolute;
+  left: 63.95vw;
+  top: 47vw;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 2vw;
+  background: #181719;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.perfil img {
+  width: 3.47vw;
+  height: 3.47vw;
+
+  background: #c4c4c4;
+  border-radius: 37px;
+}
+.perfilDatos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.perfilDatos_name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875em;
+  margin-left: 10px;
+}
+.perfilDatos_desc {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75em;
+  margin-left: 10px;
+  color: #828282;
+}
+.perfilBanner {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 2.6vw;
+  margin-top: 10px;
+  width: 70%;
+  color: #ffffff;
+}
+
+footer {
+  font-family: sans-serif;
+  font-size: 1em;
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+.navMobile {
+  display: none;
+}
+.nav-toggle {
+  display: none;
+}
+.nav-togglex {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  body {
+    font-size: 12px;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 10px;
+  }
+  main {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .portada_img {
+    width: 93.6vw;
+    height: 70.4vw;
+    margin-top: 37px;
+  }
+  .perfil {
+    position: relative;
+    top: -10vw;
+    left: 5vw;
+  }
+  .perfilDatos_name {
+    font-size: 12px;
+  }
+  .perfilDatos_desc {
+    font-size: 10px;
+  }
+  .perfilBanner {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .menuList {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #181719;
+    margin-right: 20px;
+    position: fixed;
+    left: 100;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    padding: 20px 0;
+
+    overflow-y: auto;
+    left: 0%;
+    z-index: 1;
+    transition: 0.3s;
+  }
+  .menuList_li {
+    margin-bottom: 15px;
+    margin-left: 0;
+  }
+  .nav-toggle {
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .nav-togglex {
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .menuList-visible {
+    left: 100%;
+    transition: 0.3s;
+  }
+}
